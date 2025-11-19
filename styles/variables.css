@@ -1,1 +1,95 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+  --main-font: "Inter-Variable", Arial, sans-serif;
+  --accent-font: "PressStart2P", "Courier New", monospace;
+  --bg-color: #fff;
+
+  
+  --main-font-weight: 400;
+  --card-title-weight: 715;
+  --card-text-weight: 410;
+
+  --grid-color: #d3d3d3;
+  --fade-top: #e7e7e7;
+  --fade-bot: #1a1a1a;
+  
+  --bg-grid-x: repeating-linear-gradient(
+    to right,
+    var(--grid-color) 0 2px,
+    transparent 2px 4px
+  );
+
+  --bg-grid-y: repeating-linear-gradient(
+    to bottom,
+    var(--grid-color) 0 2px,
+    transparent 2px 4px
+  );
+
+  --bg-fade: linear-gradient(
+    to bottom,
+    var(--fade-top) 0%,
+    var(--fade-top) 0.01%,
+    var(--fade-bot) 100%
+  );
+
+  --page-bg: var(--bg-grid-x), var(--bg-grid-y), var(--bg-fade);
+  --vw-min: 375px;
+  --vw-max: 1440px;
+
+  --page-padding: clamp(
+    0px,
+    calc((370px - 0px) * ((100vw - 375px) / (1440 - 375))),
+    370px
+  );
+
+  --content-min: 375px;
+
+  --content-max: 700px;
+
+  --content-width: clamp(
+    var(--content-min),
+    calc(100vw - 2 * var(--page-padding)),
+    var(--content-max)
+  );
+
+  --header-width: clamp(
+    375px,
+    calc(375px + (700 - 375) * ((100vw - 375px) / (1440 - 375))),
+    700px
+  );
+  
+  --header-height: clamp(
+    327px,
+    calc(327px + (368 - 327) * ((100vw - 375px) / (1440 - 375))),
+    368px
+  );
+
+  --header-py: 100px;
+
+  --logo-size: clamp(
+    49px,
+    calc(49px + (65 - 49) * ((100vw - 375px) / (1440 - 375))),
+    65px
+  );
+
+  --subtitle-size: clamp(
+    14px,
+    calc(14px + (23 - 14) * ((100vw - 375px) / (1440 - 375))),
+    23px
+  );
+
+
+  --heart-color: #ff0000;
+  --contour-color: #000;
+  --animation-fill-color: #fff;
+  --text-color: #fff;
+  --accent-color: #000;
+  --heart-color: #ff0000;      
+  --heart-hover-color: #000; 
+  --contour-color: #000;
+  --animation-fill-color: #fff;
+}
+
+
+
+
