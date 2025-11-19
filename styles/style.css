@@ -89,7 +89,6 @@
   padding-inline: 10px;
   display: flex;
   align-items: center;
-  min-block-size: 30px;
 }
 
 .card__image-container {
@@ -431,6 +430,8 @@
 .like-icon .sparks {
   opacity: 0;
   transition: opacity 0.2s linear;
+  transform-box: fill-box;
+  transform-origin: center;
 }
 
 .card__icon-button:hover .like-icon .core,
@@ -477,12 +478,6 @@
 
 .like-icon.is-liked .heart {
   animation: heart-pump 0.32s cubic-bezier(0.2, 0.9, 0.2, 1) 0.36s both;
-}
-
-.like-icon .sparks {
-  transform-box: fill-box;
-  transform-origin: center;
-  opacity: 0;
 }
 
 .like-icon.is-liked .sparks {
