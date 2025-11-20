@@ -105,7 +105,7 @@
             <h2 class="card__title">1 спринт: Я — чистый лист</h2>
 
             <div class="card__image-container">
-             <picture>
+              <picture>
                 <source type="image/avif" srcset="images/image-bus.avif" />
                 <source type="image/webp" srcset="images/image-bus.webp" />
                 <img
@@ -644,17 +644,17 @@
       </ul>
 
       <!-- кнопка после карточек -->
-        <button
-          class="memories__save button"
-          type="button"
-          aria-controls="save-memory"
-          onclick="window['save-memory'].showModal()"
-        >
-          <svg class="button__icon" aria-hidden="true">
-            <use href="svg/icons.svg#save"></use>
-          </svg>
-          <span class="button__text">Сохранить на память</span>
-        </button>
+      <button
+        class="memories__save button"
+        type="button"
+        aria-controls="save-memory"
+        onclick="window['save-memory'].showModal()"
+      >
+        <svg class="button__icon" aria-hidden="true">
+          <use href="svg/icons.svg#save"></use>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
 
       <dialog
         id="save-memory"
@@ -691,4 +691,3 @@
     <script src="./scripts/like.js"></script>
   </body>
 </html>
-.save-dialog__inner
